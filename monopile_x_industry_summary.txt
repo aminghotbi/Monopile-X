@@ -1,0 +1,23 @@
+MONOPILE X — INDUSTRY SUMMARY
+Generated: 22/10/2026, 10:46:58
+SOURCE: Amin Ghotbi, Farid's industry demonstrator brief, 19 October 2026.
+
+MODEL: Aio crushable silica sand, preliminary 46-cycle comparison, 8 sampled cycle outputs.
+SELECTED CYCLE: 46
+ACTIVE PENETRATION: 171.68 mm
+SUPPRESSED PENETRATION: 88.13 mm
+DIFFERENCE: 83.55 mm
+
+ASSUMPTION-BASED ECONOMICS (NOT MODEL-INFERRED)
+Marginal cost: A$30,000/h
+Extra cost: A$50,000
+Separate contingency benefit: A$0
+Base avoided hours: 5
+Base net potential saving: A$100,000
+
+LIMITATIONS: The comparison reflects the full loading history of each run. Numerical warnings and failed updates. No independent installation validation or carbonate calibration. No demonstrated installation time/cost saving.
+
+EIP ACKNOWLEDGEMENT: Supported by RMIT Enabling Impact Platforms through the Sustainable Technologies and Systems EIP Platform Activity Fund.
+
+MODEL THEORY AND IMPLEMENTATION
+Independent hyperelastic-plastic material implementation with work-driven breakage, coupled to Abaqus/Explicit CEL through a VUMAT interface. Pore-pressure transport uses a heat-transfer analogy; near-pile effective stress informs contact. See the Model theory module for the research basis and current scope.
