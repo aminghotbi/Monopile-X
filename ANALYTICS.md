@@ -2,13 +2,14 @@
 
 ## Current state
 
-The Google Analytics 4 integration is prepared but **inactive**. The Measurement
-ID in `assets/analytics-config.js` is intentionally empty. No Google Analytics
-script, cookies or collection requests are created without a valid ID and the
-visitor's permission. Statistics are viewed in the owner's Google Analytics
-account, not exposed on the public website.
+The Google Analytics 4 integration is configured with the owner-supplied
+Measurement ID **G-91DH9E788L** in `assets/analytics-config.js`. The Google
+Analytics script loads only after the visitor chooses to allow analytics.
+Statistics are viewed in the owner's Google Analytics account, not exposed on
+the public website. The owner should confirm that Enhanced Measurement is off
+and verify incoming visits in Realtime after deployment.
 
-## Activate the owner's property
+## Property setup and verification
 
 1. In Google Analytics, create or select a property named **MONOPILE X**.
    Set the reporting time zone to **Australia/Melbourne** and currency to **AUD**.
