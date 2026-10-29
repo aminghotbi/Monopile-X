@@ -1,4 +1,4 @@
-/* GA4 visitor measurement with a persistent opt-out in the About tab.
+/* GA4 visitor measurement with a persistent opt-out in the Team tab.
  * The owner must disable Enhanced Measurement in this web stream: this file
  * explicitly controls page views and events, including avoiding form contents.
  */
@@ -18,10 +18,10 @@
   if (![privacy, toggle, status].every(Boolean)) return;
 
   const moduleNames = Object.freeze({
-    start: 'Industry introduction',
-    sandbox: '3D Digital Sandbox', theory: 'Model theory', scenarios: 'What-if & Value',
-    evidence: 'Evidence & Validation', methods: 'Industry Roadmap',
-    progress: 'Project progress', about: 'About'
+    start: 'Overview',
+    sandbox: 'Results', theory: 'The model', scenarios: 'Applications',
+    evidence: 'Validation',
+    progress: 'Roadmap', about: 'Team'
   });
   const choiceKey = 'monopile-x-analytics-choice-v1';
   const pageUrl = location.origin + config.pathname;
@@ -29,7 +29,7 @@
   let loaded = false;
   let started = false;
   let currentModule = Object.hasOwn(moduleNames, location.hash.slice(1)) ? location.hash.slice(1) : 'start';
-  if (['whatif', 'value'].includes(location.hash.slice(1))) currentModule = 'scenarios';
+  if (['whatif', 'value', 'methods'].includes(location.hash.slice(1))) currentModule = 'scenarios';
   try { if (localStorage.getItem(choiceKey) === 'decline') choice = 'decline'; } catch (_) {}
 
   function referrerOrigin() {

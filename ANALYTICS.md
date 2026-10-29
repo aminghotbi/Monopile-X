@@ -25,7 +25,7 @@ and verify incoming visits in Realtime after deployment.
    and User-ID collection off. They are not needed for this research site.
 6. Open the site and check the **Realtime** report. A browser/ad blocker or a
    saved opt-out can prevent a visit from appearing. The visitor can change the
-   setting under **About → Privacy and analytics → Visitor analytics**.
+   setting under **Team → Privacy and analytics → Visitor analytics**.
 
 ## Reports and events
 
@@ -35,8 +35,7 @@ and verify incoming visits in Realtime after deployment.
   include only the origin, and page URLs omit query strings and free-form hashes.
 - Pages and screens: the single MONOPILE X web page.
 - `module_view`: module opened; register `module_name` as an event-scoped custom
-  dimension to compare the eight modules in reports, including the industry
-  introduction (`start`).
+  dimension to compare the seven sections in reports, including the overview (`start`).
 - `inquiry_open`: inquiry form expanded.
 - `inquiry_email_draft`: a valid form was used to open an email draft. This is
   **not evidence that an email was sent or that a lead was received**.
@@ -52,7 +51,7 @@ Visitor geography is approximate and may be affected by VPNs or network routing.
 ## Visitor choices
 
 No analytics pop-up is displayed. Analytics starts automatically on the
-configured GitHub Pages website. The About tab contains an explanation and a
+configured GitHub Pages website. The Team tab contains an explanation and a
 **Visitor analytics** checkbox. Turning it off stops subsequent analytics events
 and removes this integration's GA cookies. The choice is saved in this browser;
 previously saved declines remain opted out. With no valid Measurement ID, the

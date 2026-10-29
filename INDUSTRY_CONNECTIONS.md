@@ -2,9 +2,9 @@
 
 ## Published experience
 
-The new **Start here** tab is the default homepage. It presents the research in
-four steps, compares the reported cycle-46 values, and points developers,
-consultants and installation contractors to relevant existing modules.
+The **Overview** tab introduces the research, preliminary results, validation
+pathway and industry applications. The **Discuss your project** button opens
+a focused enquiry dialog.
 
 The current enquiry route opens an email draft addressed to
 `amin.ghotbi@rmit.edu.au`, with `aminghotbi@gmail.com` copied. The visitor must

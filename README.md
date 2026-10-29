@@ -1,31 +1,34 @@
 # MONOPILE X
 
-An interactive research demonstrator for breakage-aware monopile drivability modelling, developed through RMIT's 2026 EIP Platform Activity Fund.
+An RMIT research demonstrator connecting particle-breakage modelling with offshore monopile installation, industry discussion and future validation.
 
-## Explore the demonstrator
+## Website
 
-The eight tabs cover the industry introduction, installation sandbox, model theory, combined what-if and value scenarios, evidence, the industry roadmap, project progress, and project information. The recorded comparison contains eight samples from two preliminary 46-cycle simulations in Aio crushable silica sand. Commercial scenarios use editable assumptions; they do not report measured project savings.
+https://aminghotbi.github.io/Monopile-X/
 
-The homepage opens with a short industry introduction and routes for developers, consultants and installation contractors. Existing links to technical tabs remain supported. Enquiries include a topic selector, and visitors can request a research discussion by email. Direct Microsoft Forms submission and live meeting scheduling require the owner's public form and booking links; see [INDUSTRY_CONNECTIONS.md](INDUSTRY_CONNECTIONS.md). Until those links are configured, the website clearly uses email drafts and meeting requests, not confirmed submissions or bookings.
+Seven sections guide visitors through **Overview → The model → Results → Validation → Applications → Roadmap → Team**. The site uses a restrained editorial design, responsive concept imagery, original data charts and an interactive pile schematic.
 
-## Publish with GitHub Pages
+The reported data contain eight cycle samples from two preliminary 46-cycle simulations in **Aio crushable silica sand**. They are preserved in the application. Commercial scenarios use editable assumptions and do not establish measured project savings. The research roadmap assigns 55% of the programme weight to implementation; this is not validation readiness.
 
-In this repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose **main** and **/(root)**, then click **Save**. GitHub will show the live address when deployment completes. Add `#theory` to the published address to open the theory module directly.
+## Source and publishing
 
-`index.html` and `assets/` contain the complete application. No build step or package installation is needed. `.nojekyll` keeps GitHub Pages serving the static files directly.
+`index.html`, `assets/site.css` and `assets/app.js` contain the buildless application. GitHub Pages serves `main` from the repository root. No package installation or build is required. Existing deep links remain supported; `#methods`, `#whatif` and `#value` resolve to Applications.
 
-## Analytics and search visibility
+`assets/industry.js` manages enquiry and booking links. Direct submission and live availability still require owner-provided Microsoft Forms and booking URLs. Until configured, enquiries and meeting requests open email drafts that visitors must send themselves. See [INDUSTRY_CONNECTIONS.md](INDUSTRY_CONNECTIONS.md).
 
-Google Analytics 4 is configured with the owner's Measurement ID and starts automatically unless the visitor has opted out. The About tab includes an analytics notice and a persistent opt-out control; no analytics pop-up is shown. See [ANALYTICS.md](ANALYTICS.md) for setup, event definitions and private reporting. The public site does not display visitor statistics.
+Google Analytics remains configured with the owner's measurement ID. Statistics are private to the analytics account; the Team tab has the existing opt-out control and no pop-up. See [ANALYTICS.md](ANALYTICS.md). Keep the Google verification file and sitemap intact.
 
-The homepage has a canonical URL and a [sitemap](sitemap.xml). The Google ownership-verification file must remain in the repository. Search Console provides the authoritative indexing status.
-
-## Research and acknowledgements
+## Research team
 
 - Research and constitutive implementation: **Amin Ghotbi**.
 - MONOPILE X demonstrator: **Farid Fazel Mojtahedi**.
 - Supervisors: **Prof. Amin Barari** and **Prof. Majid Nazem**.
+- Collaborators: **Professor Mohammad Aminpour** and **Professor Patrick Staubach**.
 
-Supported by **RMIT Enabling Impact Platforms through the Sustainable Technologies and Systems EIP Platform Activity Fund**.
+Associated with the [ICOGI Research Group](https://icogi-research-group.github.io/icogi/) at RMIT University. Supported by [RMIT Enabling Impact Platforms](https://www.rmit.edu.au/research/our-research/enabling-impact-platforms) through the Sustainable Technologies and Systems EIP Platform Activity Fund.
 
-Contact: [amin.ghotbi@rmit.edu.au](mailto:amin.ghotbi@rmit.edu.au).
+Contact: [amin.ghotbi@rmit.edu.au](mailto:amin.ghotbi@rmit.edu.au) · [aminghotbi@gmail.com](mailto:aminghotbi@gmail.com).
+
+## Visual provenance
+
+The offshore hero is an AI-generated concept illustration, labelled on the website. It is not a project photograph or engineering model output. The exact generation prompt and implementation review are recorded in [DESIGN_REVIEW.md](DESIGN_REVIEW.md). Logos remain the supplied RMIT/EIP and ICOGI assets.

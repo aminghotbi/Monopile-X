@@ -7,6 +7,11 @@
   const topic = document.getElementById('inquiry-topic');
   const message = document.getElementById('inquiry-message');
   const direct = document.getElementById('industry-direct-enquiry');
+  const dialog = document.getElementById('inquiry-dialog');
+  if (dialog) {
+    dialog.querySelector('[data-close-inquiry]').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
+  }
   if (!inquiry || !form || !topic || !message || !direct) return;
 
   function publicUrl(value, hosts) {
@@ -49,8 +54,9 @@
         message.value = 'I would like to arrange a 20–30-minute research discussion.\n\nTopics of interest:\n\nSuggested times and time zone:\n';
       }
     }
+    if (dialog && !dialog.open) dialog.showModal();
     inquiry.open = true;
-    scrollTo(inquiry);
+    if (!dialog) scrollTo(inquiry);
     if (!enquiryUrl) document.getElementById('inquiry-name').focus({ preventScroll: true });
   }
 
