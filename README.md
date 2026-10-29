@@ -4,7 +4,9 @@ An interactive research demonstrator for breakage-aware monopile drivability mod
 
 ## Explore the demonstrator
 
-The seven tabs cover the installation sandbox, model theory, combined what-if and value scenarios, evidence, the industry roadmap, project progress, and project information. The recorded comparison contains eight samples from two preliminary 46-cycle simulations in Aio crushable silica sand. Commercial scenarios use editable assumptions; they do not report measured project savings.
+The eight tabs cover the industry introduction, installation sandbox, model theory, combined what-if and value scenarios, evidence, the industry roadmap, project progress, and project information. The recorded comparison contains eight samples from two preliminary 46-cycle simulations in Aio crushable silica sand. Commercial scenarios use editable assumptions; they do not report measured project savings.
+
+The homepage opens with a short industry introduction and routes for developers, consultants and installation contractors. Existing links to technical tabs remain supported. Enquiries include a topic selector, and visitors can request a research discussion by email. Direct Microsoft Forms submission and live meeting scheduling require the owner's public form and booking links; see [INDUSTRY_CONNECTIONS.md](INDUSTRY_CONNECTIONS.md). Until those links are configured, the website clearly uses email drafts and meeting requests, not confirmed submissions or bookings.
 
 ## Publish with GitHub Pages
 

@@ -18,6 +18,7 @@
   if (![privacy, toggle, status].every(Boolean)) return;
 
   const moduleNames = Object.freeze({
+    start: 'Industry introduction',
     sandbox: '3D Digital Sandbox', theory: 'Model theory', scenarios: 'What-if & Value',
     evidence: 'Evidence & Validation', methods: 'Industry Roadmap',
     progress: 'Project progress', about: 'About'
@@ -27,7 +28,7 @@
   let choice = 'allow';
   let loaded = false;
   let started = false;
-  let currentModule = Object.hasOwn(moduleNames, location.hash.slice(1)) ? location.hash.slice(1) : 'sandbox';
+  let currentModule = Object.hasOwn(moduleNames, location.hash.slice(1)) ? location.hash.slice(1) : 'start';
   if (['whatif', 'value'].includes(location.hash.slice(1))) currentModule = 'scenarios';
   try { if (localStorage.getItem(choiceKey) === 'decline') choice = 'decline'; } catch (_) {}
 

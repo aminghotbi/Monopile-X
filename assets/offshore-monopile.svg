@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Offshore wind and monopile foundation</title>
+  <desc id="desc">A colourful schematic of offshore wind turbines and a foreground monopile extending through the water into the seabed. A detail shows soil grains. The illustration is not to scale and is not a simulation result.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#73dafa"/><stop offset="1" stop-color="#d7f8ff"/></linearGradient>
+    <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#17b8d8"/><stop offset="1" stop-color="#086d9c"/></linearGradient>
+    <linearGradient id="sand" x2="0" y2="1"><stop stop-color="#ffd399"/><stop offset="1" stop-color="#d98b6b"/></linearGradient>
+    <linearGradient id="steel"><stop stop-color="#326b91"/><stop offset=".4" stop-color="#a9dfeb"/><stop offset=".65" stop-color="#e2f9fa"/><stop offset="1" stop-color="#468bad"/></linearGradient>
+    <linearGradient id="tower"><stop stop-color="#ccedf5"/><stop offset=".4" stop-color="#fff"/><stop offset="1" stop-color="#acd0e3"/></linearGradient>
+    <linearGradient id="transition"><stop stop-color="#ed963c"/><stop offset=".4" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffbc4d"/></linearGradient>
+    <pattern id="grains" width="40" height="32" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="2" fill="#b26756" opacity=".34"/><circle cx="27" cy="21" r="3" fill="#fff0bc" opacity=".6"/><path d="m29 5 5 2-2 5-5-2z" fill="#a96154" opacity=".22"/><circle cx="9" cy="26" r="1.5" fill="#96604f" opacity=".3"/></pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="758" height="428" rx="25"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#sky)" d="M0 0h760v246H0z"/>
+    <circle cx="641" cy="76" r="34" fill="#ffd36e"/>
+    <circle cx="641" cy="76" r="48" fill="#ffe9a3" opacity=".32"/>
+    <path d="M34 68h82m-55 14h106m389-38h53" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".54"/>
+    <path d="M0 199c85-15 129 10 206-4s121 8 196-1 124 10 199-2 102 2 159 6v106H0z" fill="url(#sea)"/>
+    <path d="M0 302c146-12 259 11 384-1s248 5 376-5v134H0z" fill="url(#sand)"/>
+    <path d="M0 302c146-12 259 11 384-1s248 5 376-5v134H0z" fill="url(#grains)"/>
+    <path d="M0 303c146-12 259 11 384-1s248 5 376-5" fill="none" stroke="#fff0bc" stroke-width="4"/>
+    <g opacity=".77" stroke="#4086a3" stroke-width="1.3" stroke-linejoin="round">
+      <path d="m168 141-5 61h11l-3-61" fill="url(#tower)"/>
+      <path d="m168 139-4-46 5-13 3 51-4 8m-2 3-38 23-12 1 42-28 8 4m6-1 36 23 7 10-42-25-1-8" fill="#f9feff"/>
+      <circle cx="168" cy="140" r="4" fill="#c7edf2"/>
+      <path d="M164 201h9v12h-9z" fill="#ffcb5f" stroke="none"/>
+    </g>
+    <g stroke="#4086a3" stroke-width="1.5" stroke-linejoin="round">
+      <path d="m298 110-6 90h13l-4-90" fill="url(#tower)"/>
+      <path d="m299 107-4-56 5-16 3 64-4 8m-3 4-47 30-15 2 52-35 10 3m7 0 45 29 9 13-53-32-1-10" fill="#faffff"/>
+      <circle cx="299" cy="109" r="5" fill="#c7edf2"/>
+      <path d="M293 200h12v18h-12z" fill="#ffd15c" stroke="none"/>
+    </g>
+    <g stroke="#80f3f3" stroke-width="2" fill="none" opacity=".6">
+      <path d="M32 225q18-7 36 0t36 0m67 29q18-7 36 0t36 0m-81-38q13-5 26 0t26 0m138 21q15-5 30 0t30 0m113-25q16-6 32 0t32 0m25 42q15-5 30 0t30 0"/>
+      <path d="M56 278h53m198-7h66m174 8h49m89-57h38" stroke-linecap="round"/>
+    </g>
+    <ellipse cx="477" cy="308" rx="47" ry="10" fill="#c7835e" opacity=".5"/>
+    <path d="M469 246h19v145c-3 5-16 5-19 0z" fill="url(#steel)" stroke="#205d82" stroke-width="2"/>
+    <ellipse cx="478.5" cy="390" rx="8.4" ry="3.1" fill="#164d76"/>
+    <path d="M468 232h21v38c-4 4-17 4-21 0z" fill="url(#transition)" stroke="#c18a38" stroke-width="1.5"/>
+    <path d="m474 116-7 117c5 5 18 5 23 0l-8-117" fill="url(#tower)" stroke="#397fa0" stroke-width="1.8"/>
+    <path d="M465 233h27v7h-27z" fill="#ffe387" stroke="#c18a38" stroke-width="1.2"/>
+    <path d="M470 239h17" stroke="#fff0aa" stroke-width="2"/>
+    <g fill="#fff" stroke="#4d91af" stroke-width="1.8" stroke-linejoin="round">
+      <path d="m477 108-6-76 7-21 4 86-5 11z"/>
+      <path d="m474 115-65 40-20 3 72-48 13 5z"/>
+      <path d="m484 114 62 39 13 17-74-43-1-13z"/>
+      <path d="M472 108h19v11h-19z" fill="#d5edf5"/>
+      <circle cx="478" cy="113" r="7" fill="#dff4fb"/>
+    </g>
+    <g fill="none" stroke="#d2ffff" stroke-width="1.4" opacity=".6"><ellipse cx="478" cy="113" rx="98" ry="99" stroke-dasharray="4 9"/></g>
+    <g font-family="Arial, sans-serif" font-size="14" font-weight="600">
+      <rect x="26" y="316" width="92" height="26" rx="13" fill="#70483e" opacity=".88"/><text x="72" y="334" text-anchor="middle" fill="#fff1d8">Seabed</text>
+      <rect x="26" y="244" width="87" height="26" rx="13" fill="#095078" opacity=".9"/><text x="69" y="262" text-anchor="middle" fill="#d7ffff">Water</text>
+      <path d="M489 280h62l17-16" stroke="#b5ffff" stroke-width="1.5" fill="none"/>
+      <rect x="564" y="244" width="105" height="28" rx="14" fill="#0c416c"/><text x="616" y="263" text-anchor="middle" fill="#e4ffff">Monopile</text>
+    </g>
+    <path d="M491 347h78" fill="none" stroke="#996650" stroke-width="1.5" stroke-dasharray="4 5"/>
+    <circle cx="625" cy="348" r="51" fill="#fff3d3" stroke="#ffecc1" stroke-width="6"/>
+    <g fill="#d69361" stroke="#a66e50" stroke-width="1.3" stroke-linejoin="round">
+      <path d="m599 320 12-5 10 9-3 14-15 1-8-10z"/>
+      <path d="m629 314 12 2 6 11-10 8-11-6z"/>
+      <path d="m592 346 13-3 7 10-7 13-15-7z"/>
+      <path d="m627 341 12-3 8 10-5 13-15-3-6-9z"/>
+      <path d="m611 367 11-6 9 9-4 12-14-2z"/>
+      <path d="m649 333 7-4 7 9-4 9-8-2z"/>
+      <path d="m643 370 7-7 9 4-2 10-9 1z"/>
+      <path d="m618 345 3 3-2 5-5-2zM636 364l3 2-1 5-4-2zM612 343l3-1 1 4-4 1z" fill="#b77956"/>
+    </g>
+    <text x="625" y="413" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#673f36">Soil grains · schematic</text>
+  </g>
+  <rect x="1" y="1" width="758" height="428" rx="25" fill="none" stroke="#9be9f3" stroke-width="2"/>
+</svg>

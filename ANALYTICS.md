@@ -35,7 +35,8 @@ and verify incoming visits in Realtime after deployment.
   include only the origin, and page URLs omit query strings and free-form hashes.
 - Pages and screens: the single MONOPILE X web page.
 - `module_view`: module opened; register `module_name` as an event-scoped custom
-  dimension to compare the seven modules in reports.
+  dimension to compare the eight modules in reports, including the industry
+  introduction (`start`).
 - `inquiry_open`: inquiry form expanded.
 - `inquiry_email_draft`: a valid form was used to open an email draft. This is
   **not evidence that an email was sent or that a lead was received**.

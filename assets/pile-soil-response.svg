@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+  <title id="title">Cyclic loading and pile–soil interaction</title>
+  <desc id="desc">A schematic pile under alternating vertical loading, extending into a bed of soil grains. Labels identify pile motion and soil response.</desc>
+  <defs><linearGradient id="pile"><stop stop-color="#478ec3"/><stop offset=".5" stop-color="#d4f6ff"/><stop offset="1" stop-color="#6cb8d7"/></linearGradient></defs>
+  <path d="M24 83q64-6 119 0t121 0 130 0 103 0v50H24z" fill="#edb67d" opacity=".16"/>
+  <path d="M24 83q64-6 119 0t121 0 130 0 103 0" fill="none" stroke="#ffc88c" stroke-width="2" opacity=".8"/>
+  <g fill="#ffc890" opacity=".8"><circle cx="126" cy="102" r="5"/><circle cx="147" cy="115" r="3"/><circle cx="166" cy="95" r="4"/><circle cx="187" cy="120" r="5"/><circle cx="262" cy="101" r="4"/><circle cx="280" cy="119" r="5"/><circle cx="299" cy="97" r="3"/><circle cx="313" cy="112" r="4"/><circle cx="154" cy="128" r="2"/><circle cx="255" cy="126" r="2"/><circle cx="282" cy="94" r="2"/></g>
+  <path d="M208 34h26v92c-5 6-21 6-26 0z" fill="url(#pile)" stroke="#9de9ff" stroke-width="1.8"/>
+  <ellipse cx="221" cy="34" rx="13" ry="4" fill="#1c5079" stroke="#b5f2ff" stroke-width="1.8"/>
+  <ellipse cx="221" cy="34" rx="8" ry="2.5" fill="#103962"/>
+  <path d="M180 19v39m-6-32 6-7 6 7m-12 25 6 7 6-7" fill="none" stroke="#8bffe2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M236 51h71m-65-5-6 5 6 5" stroke="#8be8ff" stroke-width="1.6" fill="none"/>
+  <path d="M287 109h48" stroke="#ffd39b" stroke-width="1.6"/>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="600"><text x="57" y="43" fill="#b7ffe8">Cyclic load</text><text x="318" y="56" fill="#c8f6ff">Pile motion</text><text x="346" y="114" fill="#ffdfb3">Soil response</text></g>
+</svg>
