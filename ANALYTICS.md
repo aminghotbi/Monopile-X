@@ -4,7 +4,7 @@
 
 The Google Analytics 4 integration is configured with the owner-supplied
 Measurement ID **G-91DH9E788L** in `assets/analytics-config.js`. The Google
-Analytics script loads only after the visitor chooses to allow analytics.
+Analytics script starts automatically unless the visitor has opted out.
 Statistics are viewed in the owner's Google Analytics account, not exposed on
 the public website. The owner should confirm that Enhanced Measurement is off
 and verify incoming visits in Realtime after deployment.
@@ -23,8 +23,9 @@ and verify incoming visits in Realtime after deployment.
    service-account credentials in the repository.
 5. Leave Google signals, advertising features, user-provided data collection
    and User-ID collection off. They are not needed for this research site.
-6. Open the site, allow optional analytics, and check the **Realtime** report.
-   A browser/ad blocker or declined consent can prevent a visit from appearing.
+6. Open the site and check the **Realtime** report. A browser/ad blocker or a
+   saved opt-out can prevent a visit from appearing. The visitor can change the
+   setting under **About → Privacy and analytics → Visitor analytics**.
 
 ## Reports and events
 
@@ -49,10 +50,12 @@ Visitor geography is approximate and may be affected by VPNs or network routing.
 
 ## Visitor choices
 
-The banner appears only after a valid owner ID is configured. Both Allow and
-Decline are available. The choice is stored in this browser. Visitors can change
-it under **About → Privacy and analytics → Analytics preferences**. Declining
-stops subsequent analytics events and removes this integration's GA cookies.
+No analytics pop-up is displayed. Analytics starts automatically on the
+configured GitHub Pages website. The About tab contains an explanation and a
+**Visitor analytics** checkbox. Turning it off stops subsequent analytics events
+and removes this integration's GA cookies. The choice is saved in this browser;
+previously saved declines remain opted out. With no valid Measurement ID, the
+tracker and preference controls remain inactive.
 
 ## Google Search
 

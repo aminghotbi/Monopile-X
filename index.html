@@ -109,10 +109,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,s
 @media(max-width:540px){.tab{font-size:11px;padding:10px 9px;gap:6px}.tab-label{font-size:8px}.industry-contact{padding:15px}.inquiry-row{grid-template-columns:1fr}.inquiry-field input,.inquiry-field textarea{font-size:16px}.scenario-title{font-size:16px}.scenario-title .status{margin:6px 0 0;display:table}.progress-current-status{padding:18px 20px}}
 @media print{.industry-contact{display:none}.scenario-intro,.scenario-description,.progress-current-status p{color:#26394d}.scenario-value{border-color:#bbb}.progress-current-status{break-inside:avoid}.scenario-topic{break-inside:auto}}
 
-.analytics-consent{position:fixed;bottom:22px;right:22px;z-index:100;max-width:610px;width:calc(100% - 44px);background:#12263b;border:1px solid #48718c;border-radius:13px;padding:20px;box-shadow:0 12px 50px #0008;color:var(--txt)}
-.analytics-consent[hidden],#analytics-privacy[hidden]{display:none}.analytics-consent h2{font:700 16px 'Space Grotesk';margin:0 0 9px}.analytics-consent p{font-size:12px;line-height:1.7;color:#c1d1e2;margin:0 0 14px}.analytics-consent-actions{display:flex;gap:9px;flex-wrap:wrap}.analytics-consent .btn{background:#1d3b53;border-color:#5b7b94;min-height:40px}.analytics-consent .btn:focus-visible,#analytics-preferences:focus-visible{outline:2px solid #8ee8fc;outline-offset:3px}.analytics-privacy{margin-top:16px}.analytics-privacy .analytics-choice-status{font-size:12px;color:#a9dbe9}
-@media(max-width:540px){.analytics-consent{bottom:12px;right:12px;width:calc(100% - 24px);padding:17px;max-height:calc(100vh - 24px);overflow:auto}}
-@media print{.analytics-consent,#analytics-preferences{display:none}}
+#analytics-privacy[hidden]{display:none}.analytics-privacy{margin-top:16px}.analytics-privacy .analytics-choice-status{font-size:12px;color:#a9dbe9}.analytics-toggle{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:13px;cursor:pointer}.analytics-toggle input{width:18px;height:18px;accent-color:#58d1e8}.analytics-toggle input:focus-visible{outline:2px solid #8ee8fc;outline-offset:3px}
+@media print{.analytics-toggle{display:none}}
 </style></head><body><div class="shell"><header class="top">
   <div class="header-brand"><div class="brand">MONOPILE <span>X</span></div><div class="sub">INSTALLATION INTELLIGENCE LAB <span style="margin-left:10px;color:#4c6988">/ PAF INDUSTRY DEMONSTRATOR</span></div><span class="pill header-evidence">● PRELIMINARY MODEL EVIDENCE</span></div>
   <aside class="industry-contact" aria-labelledby="industry-contact-title">
@@ -324,22 +322,13 @@ button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,s
     </div>
     <div class="panel about-copy analytics-privacy" id="analytics-privacy" hidden>
       <h3 class="panel-title">Privacy and analytics</h3>
-      <p>With your permission, Google Analytics uses cookies to measure visits, approximate location, referral websites and module use. This helps us understand how the demonstrator supports research and industry engagement. Inquiry text and calculator values are not included in our analytics events.</p>
+      <p>We use Google Analytics cookies to measure visits, approximate location, referral websites and module use. This helps us understand how the demonstrator supports research and industry engagement. Inquiry text and calculator values are not included in our analytics events. You can turn analytics off for this browser below.</p>
       <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></p>
+      <label class="analytics-toggle"><input type="checkbox" id="analytics-enabled" aria-describedby="analytics-choice-status">Visitor analytics</label>
       <p class="analytics-choice-status" id="analytics-choice-status" role="status"></p>
-      <button class="btn" type="button" id="analytics-preferences">Analytics preferences</button>
     </div>
   </div>
 </section></div>
-<aside class="analytics-consent" id="analytics-consent" aria-labelledby="analytics-consent-title" hidden>
-  <h2 id="analytics-consent-title">Optional visitor analytics</h2>
-  <p>Allow Google Analytics cookies to measure visits, approximate location and module use? Your inquiry text is not included. You can change your choice in About.</p>
-  <div class="analytics-consent-actions">
-    <button class="btn" type="button" id="analytics-allow">Allow analytics</button>
-    <button class="btn" type="button" id="analytics-decline">Decline</button>
-    <button class="btn" type="button" id="analytics-close" hidden>Keep current choice</button>
-  </div>
-</aside>
 <script>
 const DATA=[{c:0,a:0,s:0,av:1.794,sv:1.847},{c:8,a:62.46,s:60.07,av:-.591,sv:-.463},{c:16,a:79.18,s:69.89,av:.348,sv:.181},{c:20,a:109.4,s:83.54,av:.047,sv:-.071},{c:30,a:125.65,s:59.98,av:.060,sv:-.038},{c:35,a:142.17,s:74.34,av:.079,sv:.065},{c:40,a:155.71,s:80.70,av:.021,sv:-.025},{c:46,a:171.68,s:88.13,av:.031,sv:-.021}];let idx=7,mode='both',angle=-.48,zoom=1,playing=null,studies=[];const $=id=>document.getElementById(id),fmt=(x,d=2)=>Number(x).toFixed(d),money=x=>(x<0?'−':'')+'A$'+Math.abs(x).toLocaleString('en-AU',{maximumFractionDigits:0});
 

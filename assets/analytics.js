@@ -1,4 +1,4 @@
-/* Optional GA4 measurement. The Google script loads only after visitor consent.
+/* GA4 visitor measurement with a persistent opt-out in the About tab.
  * The owner must disable Enhanced Measurement in this web stream: this file
  * explicitly controls page views and events, including avoiding form contents.
  */
@@ -12,14 +12,10 @@
   if (!/^G-[A-Z0-9]{6,20}$/.test(id) || location.hostname !== config.hostname ||
       !location.pathname.startsWith(config.pathname)) return;
 
-  const panel = document.getElementById('analytics-consent');
   const privacy = document.getElementById('analytics-privacy');
-  const allow = document.getElementById('analytics-allow');
-  const decline = document.getElementById('analytics-decline');
-  const preferences = document.getElementById('analytics-preferences');
-  const close = document.getElementById('analytics-close');
+  const toggle = document.getElementById('analytics-enabled');
   const status = document.getElementById('analytics-choice-status');
-  if (![panel, privacy, allow, decline, preferences, close, status].every(Boolean)) return;
+  if (![privacy, toggle, status].every(Boolean)) return;
 
   const moduleNames = Object.freeze({
     sandbox: '3D Digital Sandbox', theory: 'Model theory', scenarios: 'What-if & Value',
@@ -28,12 +24,12 @@
   });
   const choiceKey = 'monopile-x-analytics-choice-v1';
   const pageUrl = location.origin + config.pathname;
-  let choice = '';
+  let choice = 'allow';
   let loaded = false;
   let started = false;
   let currentModule = Object.hasOwn(moduleNames, location.hash.slice(1)) ? location.hash.slice(1) : 'sandbox';
   if (['whatif', 'value'].includes(location.hash.slice(1))) currentModule = 'scenarios';
-  try { choice = localStorage.getItem(choiceKey) || ''; } catch (_) {}
+  try { if (localStorage.getItem(choiceKey) === 'decline') choice = 'decline'; } catch (_) {}
 
   function referrerOrigin() {
     try { return document.referrer ? new URL(document.referrer).origin + '/' : ''; }
@@ -57,10 +53,9 @@
     window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
     if (!loaded) {
       window.gtag('consent', 'default', {
-        analytics_storage: 'denied', ad_storage: 'denied',
+        analytics_storage: 'granted', ad_storage: 'denied',
         ad_user_data: 'denied', ad_personalization: 'denied'
       });
-      window.gtag('consent', 'update', { analytics_storage: 'granted' });
       window.gtag('js', new Date());
       window.gtag('config', id, {
         send_page_view: false,
@@ -100,8 +95,9 @@
   }
 
   function updateStatus() {
-    status.textContent = choice === 'allow' ? 'Optional analytics: allowed.' :
-      choice === 'decline' ? 'Optional analytics: declined.' : 'Optional analytics are off until you choose to allow them.';
+    toggle.checked = choice === 'allow';
+    status.textContent = choice === 'allow' ? 'Visitor analytics are on for this browser.' :
+      'Visitor analytics are off for this browser.';
   }
 
   function choose(value) {
@@ -109,26 +105,15 @@
     try { localStorage.setItem(choiceKey, value); } catch (_) {}
     if (value === 'allow') start(); else stop();
     updateStatus();
-    panel.hidden = true;
-    if (panel.contains(document.activeElement)) {
-      const focusTarget = document.getElementById('about').classList.contains('active') ?
-        preferences : document.querySelector('.tab.active');
-      if (focusTarget) focusTarget.focus();
-    }
   }
 
-  allow.addEventListener('click', function () { choose('allow'); });
-  decline.addEventListener('click', function () { choose('decline'); });
-  close.addEventListener('click', function () { panel.hidden = true; preferences.focus(); });
-  preferences.addEventListener('click', function () {
-    panel.hidden = false;
-    close.hidden = false;
-    allow.focus();
+  toggle.addEventListener('change', function () {
+    choose(toggle.checked ? 'allow' : 'decline');
   });
   privacy.hidden = false;
   updateStatus();
   if (choice === 'allow') start();
-  else if (choice !== 'decline') panel.hidden = false;
+  else stop();
 
   window.MonopileAnalytics = Object.freeze({
     moduleView: function (name) {

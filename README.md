@@ -14,7 +14,7 @@ In this repository, open **Settings → Pages**. Under **Build and deployment**,
 
 ## Analytics and search visibility
 
-Google Analytics 4 is configured with the owner's Measurement ID and runs only after visitor consent. See [ANALYTICS.md](ANALYTICS.md) for setup, visitor consent, event definitions and private reporting. The public site does not display visitor statistics.
+Google Analytics 4 is configured with the owner's Measurement ID and starts automatically unless the visitor has opted out. The About tab includes an analytics notice and a persistent opt-out control; no analytics pop-up is shown. See [ANALYTICS.md](ANALYTICS.md) for setup, event definitions and private reporting. The public site does not display visitor statistics.
 
 The homepage has a canonical URL and a [sitemap](sitemap.xml). The Google ownership-verification file must remain in the repository. Search Console provides the authoritative indexing status.
 
