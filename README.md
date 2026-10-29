@@ -4,13 +4,19 @@ An interactive research demonstrator for breakage-aware monopile drivability mod
 
 ## Explore the demonstrator
 
-The six modules cover the installation sandbox, model theory and implementation, what-if studies, installation economics, evidence, and industry integration. The recorded comparison contains eight samples from two preliminary 46-cycle simulations in Aio crushable silica sand. Commercial scenarios use editable assumptions; they do not report measured project savings.
+The seven tabs cover the installation sandbox, model theory, combined what-if and value scenarios, evidence, the industry roadmap, project progress, and project information. The recorded comparison contains eight samples from two preliminary 46-cycle simulations in Aio crushable silica sand. Commercial scenarios use editable assumptions; they do not report measured project savings.
 
 ## Publish with GitHub Pages
 
 In this repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose **main** and **/(root)**, then click **Save**. GitHub will show the live address when deployment completes. Add `#theory` to the published address to open the theory module directly.
 
 `index.html` and `assets/` contain the complete application. No build step or package installation is needed. `.nojekyll` keeps GitHub Pages serving the static files directly.
+
+## Analytics and search visibility
+
+Google Analytics 4 integration is prepared and inactive until the owner supplies a Measurement ID. See [ANALYTICS.md](ANALYTICS.md) for activation, visitor consent, event definitions and private reporting. The public site does not display visitor statistics.
+
+The homepage has a canonical URL and a [sitemap](sitemap.xml). The Google ownership-verification file must remain in the repository. Search Console provides the authoritative indexing status.
 
 ## Research and acknowledgements
 
