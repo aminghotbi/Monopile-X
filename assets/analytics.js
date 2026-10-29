@@ -21,7 +21,7 @@
     start: 'Overview',
     sandbox: 'Results', theory: 'The model', scenarios: 'Applications',
     evidence: 'Validation',
-    progress: 'Roadmap', about: 'Team'
+    progress: 'Roadmap', briefing: 'Weekly briefing', about: 'Team'
   });
   const choiceKey = 'monopile-x-analytics-choice-v1';
   const pageUrl = location.origin + config.pathname;

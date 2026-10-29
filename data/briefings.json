@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-30T03:45:34+11:00",
+  "last_checked_at": "2026-10-30T03:45:34+11:00",
+  "timezone": "Australia/Sydney",
+  "issues": [
+    {
+      "id": "2026-10-30",
+      "date": "2026-10-30",
+      "period_start": "2026-10-23",
+      "period_end": "2026-10-30",
+      "headline": "From port readiness to the behaviour of crushable sands.",
+      "intro": "Our opening edition follows a foundation delivery milestone in the Baltic and two research papers on calcareous-soil response. An Australian programme update provides context for the decisions these developments could inform.",
+      "takeaway": "A useful industry case should connect the soil response to a specific installation decision. The next question is which measurements would reduce uncertainty enough to change that decision.",
+      "items": [
+        {
+          "id": "bc-wind-monopiles-20261028",
+          "category": "industry",
+          "topic": "Installation logistics",
+          "title": "BC-Wind receives its first monopiles in Poland.",
+          "summary": "Ocean Winds reports that the first BC-Wind monopiles have arrived at Świnoujście Offshore Terminal. Local contractors are preparing the ground and supporting handling, transport and storage before the foundations move offshore. This is a delivery and logistics milestone; offshore installation is still to follow.",
+          "implication": "Foundation delivery links port readiness, handling capacity and the installation campaign. For developers, this is a useful reminder to assess drivability uncertainty within the wider construction schedule, rather than as an isolated soil parameter.",
+          "source": {
+            "name": "Ocean Winds / BC-Wind",
+            "url": "https://bc-wind.pl/en/ocean-winds-has-received-the-first-monopiles-for-the-bc-wind-offshore-wind-farm-at-the-port-of-swinoujscie/",
+            "date": "2026-10-28",
+            "date_type": "published",
+            "access_note": "Developer announcement."
+          }
+        },
+        {
+          "id": "coral-sand-plasticity-128205",
+          "category": "research",
+          "topic": "Constitutive modelling",
+          "title": "A work-based breakage law for coral sand.",
+          "summary": "Weijian Liu and co-authors combine monotonic and short-term cyclic testing with a generalised plasticity model for coral sand. Their formulation links relative breakage to plastic work and incorporates it into critical-state and dilatancy relations. The paper also describes joint parameter calibration using CMA-ES.",
+          "implication": "This offers a relevant comparison for choosing calibration targets and examining how breakage changes soil response. It does not validate MONOPILE X or establish performance for a full-scale pile installation.",
+          "source": {
+            "name": "Ocean Engineering · Liu et al.",
+            "url": "https://doi.org/10.1016/j.oceaneng.2026.128205",
+            "date": "2026-10-30",
+            "date_type": "issue",
+            "access_note": "Based on publisher abstract and highlights; journal issue date shown."
+          }
+        },
+        {
+          "id": "calcareous-pile-bucket-128125",
+          "category": "research",
+          "topic": "Cyclic foundation response",
+          "title": "Testing lateral response in calcareous sand.",
+          "summary": "Yuteng Liu and co-authors compare monopiles and pile–bucket composite foundations in 1g model tests under monotonic and multistage cyclic lateral loading. The study examines how foundation configuration and loading history influence response in calcareous sand.",
+          "implication": "The test programme is relevant to selecting lateral-response benchmarks and loading sequences. Its composite-foundation results should not be transferred directly to a standalone monopile or treated as evidence of vibratory installation savings.",
+          "source": {
+            "name": "Ocean Engineering · Liu et al.",
+            "url": "https://doi.org/10.1016/j.oceaneng.2026.128125",
+            "date": "2026-10-30",
+            "date_type": "issue",
+            "access_note": "Based on publisher abstract and highlights; journal issue date shown."
+          }
+        },
+        {
+          "id": "victoria-auction-context-20261030",
+          "category": "context",
+          "topic": "Australia watch",
+          "title": "Deliverability remains central to Victoria’s offshore-wind programme.",
+          "summary": "Offshore Wind Energy Victoria states that its first 2 GW auction opened in August 2026, with bids accepted until August 2027 and awards expected in 2028. Assessment includes value for money and deliverability. This is ongoing programme context, not an announcement from the past week.",
+          "implication": "For geotechnical research, the useful connection is a traceable account of installation risk and the evidence needed to reduce it. Better predictions would need to demonstrate a decision benefit before any schedule or cost saving could be claimed.",
+          "source": {
+            "name": "Offshore Wind Energy Victoria",
+            "url": "https://www.energy.vic.gov.au/renewable-energy/offshore-wind-energy/offshore-wind-energy-victoria",
+            "date": "2026-10-30",
+            "date_type": "checked",
+            "access_note": "Current official programme page; date checked is shown."
+          }
+        }
+      ]
+    }
+  ]
+}
