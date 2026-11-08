@@ -1,9 +1,65 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-30T03:45:34+11:00",
-  "last_checked_at": "2026-10-30T03:45:34+11:00",
+  "updated_at": "2026-11-09T08:15:00+11:00",
+  "last_checked_at": "2026-11-09T08:15:00+11:00",
   "timezone": "Australia/Sydney",
   "issues": [
+    {
+      "id": "2026-11-09",
+      "date": "2026-11-09",
+      "period_start": "2026-11-02",
+      "period_end": "2026-11-08",
+      "headline": "Better ground data. Better installation assurance.",
+      "intro": "This week’s developments highlight two parts of the monopile delivery chain: geotechnical information gathered before projects are built, and verification of foundation condition after installation. A new centrifuge dataset also offers useful evidence for cyclic pile–soil response in sand.",
+      "takeaway": "Can the project team connect site investigation, installation records and post-installation measurements into one traceable assessment? That evidence chain is essential when judging whether a more advanced soil model improves an actual installation decision.",
+      "items": [
+        {
+          "id": "fugro-bsh-geotechnical-20261105",
+          "category": "industry",
+          "topic": "Offshore site investigation · Germany",
+          "title": "Fugro secures a multi-year North Sea geotechnical investigation framework.",
+          "summary": "On 5 November, Fugro announced a multi-year framework agreement with Germany’s Federal Maritime and Hydrographic Agency (BSH) for geotechnical site investigations in the German North Sea. The scope includes offshore drilling, seabed cone penetration testing and laboratory testing. The programme is scheduled to begin in mid-March 2027, with data intended to support future wind-farm tendering and development.",
+          "implication": "This is a useful signal that high-quality ground characterisation remains a core part of offshore-wind project de-risking. For monopile design and drivability, the value lies in linking CPT and laboratory evidence to representative stratigraphy, stress history and soil behaviour—not simply increasing the volume of investigation data.",
+          "source": {
+            "name": "Fugro · Official announcement",
+            "url": "https://www.fugro.com/news/business-news/2026/fugro-awarded-multiyear-framework-contract-for-geotechnical-site-investigations-offshore-germany-for-offshore-wind-development",
+            "date": "2026-11-05",
+            "date_type": "published",
+            "access_note": "Official company announcement; scope and programme timing reported by Fugro."
+          }
+        },
+        {
+          "id": "east-anglia-two-post-installation-20261104",
+          "category": "industry",
+          "topic": "Installation assurance · East Anglia TWO",
+          "title": "Fugro to inspect all 64 monopile locations at East Anglia TWO.",
+          "summary": "Fugro announced a post-installation seabed survey contract from Cadeler for the 960 MW East Anglia TWO offshore wind farm. From early 2027, a work-class remotely operated vehicle will inspect 64 monopile locations. The survey is intended to verify installation quality and provide information relevant to long-term foundation integrity.",
+          "implication": "Post-installation verification is an important complement to drivability prediction. Installation models estimate how a foundation may behave during driving; seabed and foundation inspections help establish what was actually installed. Where available, measured installation and inspection records can provide valuable independent evidence for model assessment and future calibration.",
+          "source": {
+            "name": "Offshore Energy",
+            "url": "https://www.offshore-energy.biz/2026/11/04/fugro-wins-east-anglia-two-post-installation-survey-contract",
+            "date": "2026-11-04",
+            "date_type": "published",
+            "access_note": "Industry report dated 4 November 2026; project scope attributed to Fugro and Cadeler."
+          }
+        },
+        {
+          "id": "centrifuge-cyclic-monopile-dataset-20261103",
+          "category": "research",
+          "topic": "Cyclic response · Experimental data",
+          "title": "A new centrifuge dataset captures 23 cyclic monopile tests in dense sand.",
+          "summary": "Wang, Askarinejad and Pisanò published an open-access Data in Brief article describing 23 geotechnical centrifuge tests: two monotonic and 21 cyclic tests on a model monopile in dense Geba sand at a target relative density of 80%. The tests were conducted at 100 g and provide measurements for examining monotonic and cyclic lateral pile response.",
+          "implication": "A well-documented test matrix can support independent comparisons of cyclic soil–pile response, including loading-history effects. The dataset concerns dense silica sand and lateral loading; it should not be treated as direct validation of vibratory installation or carbonate-sand breakage modelling. Its value is as a complementary benchmark for cyclic foundation behaviour.",
+          "source": {
+            "name": "Data in Brief · Wang, Askarinejad and Pisanò",
+            "url": "https://doi.org/10.1016/j.dib.2026.113400",
+            "date": "2026-11-03",
+            "date_type": "published",
+            "access_note": "Open-access data article; online publication date 3 November 2026."
+          }
+        }
+      ]
+    },
     {
       "id": "2026-10-30",
       "date": "2026-10-30",
